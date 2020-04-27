@@ -5,7 +5,7 @@
 
 
 function WilmarExportsForm() {
-  
+
     var Name = $("#eFirstname").val();
     var lastname = $("#eLastname").val();
     var AddressLine1 = $("#eaddressline1").val();
@@ -23,8 +23,8 @@ function WilmarExportsForm() {
     var remarks = $("#eRemarks").val();
     var pageinfo = window.location.href;
 
-   
-    
+
+
 
     function validateEmail(sEmail) {
         var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
@@ -71,7 +71,8 @@ function WilmarExportsForm() {
     $.ajax({
         type: "POST",
         data: JSON.stringify(savecustomdata),
-        url: "/api/Wilmar/InsertContactFormdetail",
+        // url: "/api/Wilmar/InsertContactFormdetail",
+        url: "",
         contentType: "application/json",
         success: function (data) {
             //////////////
@@ -80,17 +81,13 @@ function WilmarExportsForm() {
                 window.location.href = "/thankyou";
                 //$('#contact_form1').submit();
             }
-          
+
             else {
                 alert("Sorry Operation Failed!!! Please try again later");
-               
+
                 return false;
             }
         }
     });
     return false;
 }
-
- 
-
-

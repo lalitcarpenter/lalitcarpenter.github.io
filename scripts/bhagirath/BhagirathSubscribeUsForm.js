@@ -54,7 +54,8 @@ $("#btnSubscribeUsSubmit").click(function () {
     $.ajax({
         type: "POST",
         data: JSON.stringify(savecustomdata),
-        url: "/api/Wilmar/InsertSubscribeUsFormdetail",
+        // url: "/api/Wilmar/InsertSubscribeUsFormdetail",
+        url: "",
         contentType: "application/json",
         success: function (data) {
             //////////////
@@ -81,7 +82,8 @@ $("#btnSubscribeUsSubmit").click(function () {
     $.ajax({
         type: "POST",
         data: JSON.stringify(model),
-        url: "/api/Wilmar/CreateOTP",
+        // url: "/api/Wilmar/CreateOTP",
+        url: "",
         contentType: "application/json",
         success: function (data) {
             if (data.status == "1") {
@@ -96,7 +98,8 @@ $("#btnSubscribeUsSubmit").click(function () {
                     $.ajax({
                         type: "POST",
                         data: JSON.stringify(generatedOtp),
-                        url: "/api/Wilmar/VerifyOTP",
+                        // url: "/api/Wilmar/VerifyOTP",
+                        url: "",
                         contentType: "application/json",
                         success: function (data) {
                             if (data.status == "1") {
@@ -123,4 +126,3 @@ $("#btnSubscribeUsSubmit").click(function () {
 
     return false;
 });
-
