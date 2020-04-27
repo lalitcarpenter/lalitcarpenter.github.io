@@ -19,7 +19,7 @@
 <meta property="og:image" content="assets/icons/favicon12345.png" />
 <meta property="og:description" content="" />
 <meta property="og:url" content="https://www.bil.com/" />
-<!--<meta property="og:url" content="https://www.adaniwilmar.com:443/en" />-->
+<!--<meta property="og:url" content="https://www.bil.com:443/en" />-->
     <!--[if IE 9]>
       <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-ie8/css/bootstrap-ie9.min.css" rel="stylesheet">
     <![endif]-->
