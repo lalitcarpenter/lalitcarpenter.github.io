@@ -91,6 +91,22 @@ select.form-control:not([size]):not([multiple]) {
     padding-top: calc(0.15rem + 1px);
 	padding-bottom: calc(.15rem + 1px);
 }
+
+/* Style buttons */
+.btnDownload {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 6px 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Darker background on mouse-over */
+.btnDownload:hover {
+  background-color: RoyalBlue;
+}
+
 .btn{
 	border-radius:0;
 	padding: .5rem 1rem;
@@ -2157,6 +2173,27 @@ span.morelink.less:before{
 .homestats .card-thumb{min-height: 210px;}
 .homestats .card-body p{font-size: 14px; font-weight: 600;}
 
+
+.homestatsButton{transform: translateY(0px) scale(1.0);transition: ease all 0.6s;background-color: #FD8104;border: 0px;}
+.homestatsButton:hover{transform: translateY(-10px) scale(1.0) !important;transition: ease all 0.6s !important;-webkit-box-shadow: 0 14px 24px rgba(62,57,107,.2);box-shadow: 0 14px 24px rgba(62,57,107,.2);    background: rgba(27,159,148,1);
+    color: #fff;
+    background: -moz-linear-gradient(left, rgba(27,159,148,1) 0%, rgba(49,109,179,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(27,159,148,1)), color-stop(100%, rgba(49,109,179,1)));
+    background: -webkit-linear-gradient(left, rgba(27,159,148,1) 0%, rgba(49,109,179,1) 100%);
+    background: -o-linear-gradient(left, rgba(27,159,148,1) 0%, rgba(49,109,179,1) 100%);
+    background: -ms-linear-gradient(left, rgba(27,159,148,1) 0%, rgba(49,109,179,1) 100%);
+    background: linear-gradient(to right, rgba(27,159,148,1) 0%, rgba(49,109,179,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b9f94', endColorstr='#316db3', GradientType=1 );}
+.homestatsButton:hover h3{color:#FFF;}
+.homestatsButton:hover img{-webkit-filter: invert(40%) grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-50deg) saturate(400%) contrast(5); filter: grayscale(100%) brightness(155%) sepia(100%) hue-rotate(0deg) saturate(0%) contrast(5);}
+.homestatsButton h3{color: #208e9e; margin: 0.5rem 0rem 0rem 0rem;font-size: 0.75rem;}
+.homestatsButton .card-text{font-size: 12px !important;font-weight: 120 !important;}
+.homestatsButton .card-thumb img{width: 40px;}
+.homestatsButton .card-thumb{min-height: 60px;}
+.homestatsButton .card-body p{font-size: 10px; font-weight: 120;}
+
+
+
 #about-banner .owl-dots{padding: 20px 0px 0px 0px;}
 #about-banner .owl-dot span{border-radius: 0px;}
 #about-banner .owl-dots .active span{background:#006db7}
@@ -2199,7 +2236,7 @@ span.morelink.less:before{
 .breadcrumb h1{text-transform:capitalize;}
 
 .breadcrumb-sublayout-ul{}
-.breadcrumb-sublayout-ul li{color: #000;display: inline-block;}
+.breadcrumb-sublayout-ul li{color: #ffffff;display: inline-block;}
 .breadcrumb-sublayout-ul li:nth-child(1):before{content:" "; display:none;}
 .breadcrumb-sublayout-ul li:before{
     content: "\f105";
@@ -2211,7 +2248,7 @@ span.morelink.less:before{
     top: 2px;
     margin-left: 5px;
     }
-.breadcrumb-sublayout-ul a{color: #000;text-transform: capitalize;}
+.breadcrumb-sublayout-ul a{color: #ffffff;text-transform: capitalize;}
 .breadcrumb-sublayout-ul a:hover{color: #656565;}
 .breadcrumb-sub-layout{}
 .breadcrumb-sub-layout h1{margin-top: 20px;text-transform: capitalize; margin-bottom: 10px;}
@@ -2375,7 +2412,7 @@ span.morelink.less:before{
 .m-video:after{content:""; display:block; position:absolute;background:url(../images/video-icon.png) !important;}
 
 .card-text:last-child {
-	    min-height: 42px;
+	    min-height: 80px;
     margin-bottom: 0;
     color: #5A5A5A;
     font-size: 0.9rem;
