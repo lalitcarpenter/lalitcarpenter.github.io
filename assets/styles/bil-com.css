@@ -962,7 +962,7 @@ ol.listStyle li{list-style-type:lower-alpha;}
 .business-section p{font-size: 16px;  color: #000000;}
 .section-paragraph {
     font-size: 16px;
-    text-align: left;
+    text-align: justify;
     color: #fff;
     padding-left: 30px;
 }
@@ -2503,3 +2503,36 @@ footer{border-top: 1px solid #efefef;}
 .indiaMap a.active rect{fill:#17305E!important;stroke-dashoffset:0;stroke-dasharray:700;stroke-width:1}.indiaMap a.active path{fill:rgba(255,0,0,.5)!important;stroke-dashoffset:0;stroke-dasharray:700;stroke-width:1}.indiaMap a{cursor:pointer}.ProjectAssetsDataInner{background-color:rgba(255,255,255,0);width:100%;margin-bottom:40px;border:none solid #fff; color:#414141}.ProjectAssetsDataInner h3{color:#414141;font-size:1.3rem;text-shadow:1px 1px rgba(255,255,255,.34);margin:0 0 15px 0;border-bottom:2px solid #3070b1;padding-bottom:20px;display:inline-block}.ProjectAssetsDataInner .contPd{padding:20px}.ProjectAssetsDataInner p{font-size:18px;line-height:23px;color:#010101;max-height:190px;min-height:120px}.ProjectAssetsDataInner .close_icon{display:none;right:2px;top:4px;height:20px;width:20px;cursor:pointer}
 .indiaMap a.active circle, .indiaMap a.act circle{r: 5;stroke: red;}
 .contact-filter p strong{display:block;}
+
+
+  .orange-barLeft {
+    border-top: 10px solid #fd8104;
+    /* border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff; */
+    margin-top: 20px;
+    margin-left: 150px;
+  }
+
+  .orange-barRight {
+    border-top: 10px solid #fd8104;
+    /* border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    border-bottom: 20px solid #ffffff; */
+    margin-top: 20px;
+    margin-right: 150px;
+    margin-left: 50px;
+  }
+
+  .section-paragraphLeft {
+      font-size: 16px;
+      text-align: justify;
+      color: #fff;
+      padding-left: 30px;
+  }
+  .section-paragraphRight {
+      font-size: 16px;
+      text-align: justify;
+      color: #fff;
+      padding-left: 10px;
+  }
