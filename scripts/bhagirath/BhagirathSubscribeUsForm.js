@@ -4,7 +4,7 @@ var registerCallBack = function () {
 
     //Render the recaptcha2 on the element with ID "recaptcha2"
     recaptcha2 = grecaptcha.render('recaptcha2', {
-        'sitekey': '6LdbQ78UAAAAAG_yeb6RlZ-5RBu1YZlwWcu1B134', //Replace this with your Site key
+        'sitekey': '6LfXKfYUAAAAAPFhiySQxSELRlUlcjVHXBDFj9wS', //Replace this with your Site key
         'theme': 'light'
     });
 

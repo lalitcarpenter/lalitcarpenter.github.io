@@ -7,8 +7,7 @@ var onloadCallback = function () {
 
     //Render the recaptcha2 on the element with ID "recaptcha2"
     recaptcha1 = grecaptcha.render('recaptcha1', {
-        // 'sitekey': '6LdbQ78UAAAAAG_yeb6RlZ-5RBu1YZlwWcu1B134', //Replace this with your Site key
-        'sitekey': '',
+        'sitekey': '6LfXKfYUAAAAAPFhiySQxSELRlUlcjVHXBDFj9wS', //Replace this with your Site key
         'theme': 'light'
     });
 
@@ -18,12 +17,11 @@ var onloadCallback = function () {
 
 
 $("#btnContactUsSubmit").click(function () {
-   var response;
-    // = grecaptcha.getResponse(recaptcha1);
-    // if (response.length  ==  0) {
-    //        alert("Captcha required.");
-    //        return false;
-    //    }
+   var response = grecaptcha.getResponse(recaptcha1);
+    if (response.length  ==  0) {
+           alert("Captcha required.");
+           return false;
+       }
 
     $('#btnContactUsSubmit').attr("disabled", "disabled");
     var name = $("#cname").val();
