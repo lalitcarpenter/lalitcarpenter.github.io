@@ -18,11 +18,12 @@ var onloadCallback = function () {
 
 
 $("#btnContactUsSubmit").click(function () {
-   var response = grecaptcha.getResponse(recaptcha1);
-    if (response.length  ==  0) {
-           alert("Captcha required.");
-           return false;
-       }
+   var response;
+    // = grecaptcha.getResponse(recaptcha1);
+    // if (response.length  ==  0) {
+    //        alert("Captcha required.");
+    //        return false;
+    //    }
 
     $('#btnContactUsSubmit').attr("disabled", "disabled");
     var name = $("#cname").val();
@@ -82,7 +83,7 @@ $("#btnContactUsSubmit").click(function () {
 
 
     };
-
+// console.log(savecustomdata);
     //ajax calling to insert  custom data function
     $.ajax({
         type: "POST",
