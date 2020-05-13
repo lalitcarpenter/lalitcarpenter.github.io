@@ -1,3 +1,15 @@
+//for contact us / Careers page submit
+var recaptcha1;
+var onloadCallback = function () {
+
+    //Render the recaptcha2 on the element with ID "recaptcha2"
+    recaptcha1 = grecaptcha.render('recaptcha1', {
+        'sitekey': '6LfXKfYUAAAAAPFhiySQxSELRlUlcjVHXBDFj9wS', //Replace this with your Site key
+        'theme': 'light'
+    });
+
+};
+
 (function() {
     // get all data in form and return object
     function getFormData(form) {
@@ -52,6 +64,14 @@
 
     function handleFormSubmit(event) {  // handles form submit without any jquery
         event.preventDefault();           // we are submitting via xhr below
+
+        var response = grecaptcha.getResponse(recaptcha1);
+         if (response.length  ==  0) {
+                alert("Captcha required.");
+                return false;
+            }
+
+
         var form = event.target;
         var formData = getFormData(form);
         var data = formData.data;
