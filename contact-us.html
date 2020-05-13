@@ -192,25 +192,22 @@ addthis_share = {
 
               <div class="contact-form">
 
-      <form class="px-4 py-4" id="contact_form" name="contact_form">
-          <input type="hidden" id="cFormType" value="Contact-Us">
-          <input type="hidden" id="PageInfo" value="/contact-us">
-          <input type="hidden" id="utm_source" value="">
-          <div class="row">
+      <form class="gformContactUs px-4 py-4" id="contact_form" name="contact_form" action="https://script.google.com/macros/s/AKfycbw3qKFZMOaYMsCfnqQJZMQNHRL0NA4g9x1y3yqLWQ/exec" method="post">
+          <div class="form-elements row">
               <div class="col-md-6 mb-3">
                   <div class="form-group">
-                      <input type="text" class="form-control" id="cname" placeholder="Name">
+                      <input type="text" class="form-control" id="cname" placeholder="Name" name="Name" required>
                   </div>
               </div>
               <div class="col-md-6 mb-3">
                   <div class="form-group">
-                      <input type="email" class="form-control" id="cmailid" placeholder="Email">
+                      <input type="email" class="form-control" id="cmailid" placeholder="Email" name="Email" required>
                   </div>
               </div>
 
               <div class="col-md-6 mb-3">
                   <div class="form-group">
-                      <select class="form-control" id="cmessageType">
+                      <select class="form-control" id="cmessageType" name="MessageType" required>
                           <option value="">Subject of Message</option>
                               <option value="General Inquiry">General Inquiry</option>
                               <option value="Website Feedback">Website Feedback</option>
@@ -222,18 +219,20 @@ addthis_share = {
               </div>
               <div class="col-md-6 mb-3">
                   <div class="form-group">
-                      <input type="number" class="form-control" id="ccontactno" placeholder="Contact Number">
+                      <!-- <input type="number" class="form-control" id="ccontactno" placeholder="Contact Number" name="contactno" required> -->
+                      <input type="tel" class="form-control" id="ccontactno" name="MobileNo" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" Required>
+                      <small>Format: 123-456-7890</small>
                   </div>
               </div>
               <div class="col-md-6 mb-3">
                   <div class="form-group">
-                      <textarea class="form-control" rows="3" id="cmessage" placeholder="Message"></textarea>
+                      <textarea class="form-control" rows="3" id="cmessage" placeholder="Message" name="Message" Required></textarea>
                   </div>
               </div>
               <div class="col-md-4 mb-3">
 
-                  <div id="recaptcha1"></div>
-
+                <div class="g-recaptcha" id="recaptcha1" data-sitekey="6LfXKfYUAAAAAPFhiySQxSELRlUlcjVHXBDFj9wS"></div>
+                <br/>
               </div>
               <div class="col-md-12 mb-3 text-right">
                   <p><button type="submit" id="btnContactUsSubmit" class="btn btn-primary">Submit</button></p>
@@ -287,7 +286,7 @@ addthis_share = {
     <!-- /To top -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
-
+<script data-cfasync="false" src="scripts/bhagirath/bhagirath-form-submission-handler.js"></script>
 
 <script src="scripts/bhagirath/jquery.min.js"></script>
 <script src="scripts/bhagirath/popper.min.js"></script>
@@ -297,7 +296,7 @@ addthis_share = {
 <script src="scripts/bhagirath/owl.carousel.min.js"></script>
 <!-- <script src="scripts/bhagirath/carousle-slider.js"></script> -->
 <script src="scripts/bhagirath/owl-thumbslider.js"></script>
-<script src="scripts/bhagirath/BhagirathContactUsForm.js"></script>
+<!-- <script src="scripts/bhagirath/BhagirathContactUsForm.js"></script> -->
 <script src="scripts/bhagirath/jquery.mg-space.js"></script>
 <script src="scripts/bhagirath/wizards/jquery.validate.min.js"></script>
 <script src="scripts/bhagirath/wizards/jquery.steps.min.js"></script>

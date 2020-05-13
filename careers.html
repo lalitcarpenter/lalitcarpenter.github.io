@@ -251,25 +251,22 @@ addthis_share = {
 
               <div class="contact-form">
 
-      <form action="/careers" class="px-4 py-4" enctype="multipart/form-data" id="contact_forms" method="post" name="contact_form"><input name="__RequestVerificationToken" type="hidden" />    <input type="hidden" id="cFormTypes" value="Career-Form" name="FormType">
-          <input type="hidden" id="PageInfos" value="/careers" name="PageInfo">
-          <input type="hidden" id="utm_source" value="">
-      	<input type="hidden" id="gresponse" name="reResponse" value="abc">
-          <div class="row">
+      <form class="gformCareers px-4 py-4" id="careers_form" name="contact_form" action="https://script.google.com/macros/s/AKfycbw3qKFZMOaYMsCfnqQJZMQNHRL0NA4g9x1y3yqLWQ/exec" method="post">
+          <div class="form-elements row">
               <div class="col-md-6 mb-3">
                   <div class="form-group">
-                      <input type="text" class="form-control" id="cnames" placeholder="Name" name="Name">
+                      <input type="text" class="form-control" id="cnames" placeholder="Name" name="Name" required>
                   </div>
               </div>
               <div class="col-md-6 mb-3">
                   <div class="form-group">
-                      <input type="email" class="form-control" id="cmailids" placeholder="Email" name="Email">
+                      <input type="email" class="form-control" id="cmailids" placeholder="Email" name="Email" required>
                   </div>
               </div>
 
               <div class="col-md-6 mb-3">
                   <div class="form-group">
-                      <select class="form-control" id="cmessageTypes">
+                      <select class="form-control" id="cmessageTypes" name="MessageType" required>
                           <option value="">Subject of Message</option>
                               <option value="General Inquiry">General Inquiry</option>
                               <option value="Careers - Supply Chain Management">Careers - Supply Chain Management</option>
@@ -283,29 +280,30 @@ addthis_share = {
                   </div>
               </div>
               <div class="col-md-6 mb-3">
-                  <div class="form-group">
-                      <input type="number" class="form-control" id="ccontactnos" placeholder="Contact Number" name="Mobile">
-                  </div>
+                <div class="form-group">
+                    <!-- <input type="number" class="form-control" id="ccontactno" placeholder="Contact Number" name="contactno" required> -->
+                    <input type="tel" class="form-control" id="ccontactno" name="MobileNo" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" Required>
+                    <small>Format: 123-456-7890</small>
+                </div>
               </div>
-              <div class="col-md-6 mb-3">
+              <!-- <div class="col-md-6 mb-3">
                   <div class="form-group">
-      			<label class="">Upload your Resume</label>
+      			          <label class="">Upload your Resume</label>
                       <input name="FileAttachment" id="file" type="file" class="form-control" placeholder=" Upload your Resume" data-error-msg="Upload Your File">
-
                   </div>
-              </div>
+              </div> -->
               <div class="col-md-6 mb-3">
                   <div class="form-group">
-                      <textarea class="form-control" rows="3" id="cmessages" placeholder="Message" name="Message"></textarea>
+                      <textarea class="form-control" rows="3" id="cmessages" placeholder="Message" name="Message" Required></textarea>
                   </div>
               </div>
               <div class="col-md-4 mb-3">
 
-                  <div id="recaptcha1"></div>
-
+                <div class="g-recaptcha" id="recaptcha2" data-sitekey="6LfXKfYUAAAAAPFhiySQxSELRlUlcjVHXBDFj9wS"></div>
+                <br/>
               </div>
               <div class="col-md-12 mb-3 text-right">
-                  <p><button type="submit" id="btnContactUsSubmits" onclick()="uploadfile()" class="btn btn-primary">Submit</button></p>
+                  <p><button type="submit" id="btnContactUsSubmits" class="btn btn-primary">Submit</button></p>
               </div>
           </div>
       </form>
@@ -352,7 +350,7 @@ addthis_share = {
     <!-- /To top -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
-
+<script data-cfasync="false" src="scripts/bhagirath/bhagirath-form-submission-handler.js"></script>
 
 <script src="scripts/bhagirath/jquery.min.js"></script>
 <script src="scripts/bhagirath/popper.min.js"></script>
@@ -362,8 +360,8 @@ addthis_share = {
 <script src="scripts/bhagirath/owl.carousel.min.js"></script>
 <script src="scripts/bhagirath/carousle-slider.js"></script>
 <script src="scripts/bhagirath/owl-thumbslider.js"></script>
-<script src="scripts/bhagirath/BhagirathContactUsForm.js"></script>
-<script src="scripts/bhagirath/BhagirathSubscribeUsForm.js"></script>
+<!-- <script src="scripts/bhagirath/BhagirathContactUsForm.js"></script> -->
+<!-- <script src="scripts/bhagirath/BhagirathSubscribeUsForm.js"></script> -->
 <script src="scripts/bhagirath/jquery.mg-space.js"></script>
 <script src="scripts/bhagirath/BhagirathExportForm.js"></script>
 <script src="scripts/bhagirath/wizards/jquery.validate.min.js"></script>
