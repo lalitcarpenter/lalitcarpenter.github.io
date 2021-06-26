@@ -2543,7 +2543,7 @@ footer{border-top: 1px solid #efefef;}
 .navbar .navbar-nav .nav-item:nth-last-child(1) .nav-link{font-weight: 600; color: #f82130;}
 .navbar .navbar-nav .nav-item:nth-last-child(1) .nav-link:hover{color: #ad000c;}
 
-.txt-red{font-weight: 600; color: #f82130 !important;}
+.txt-red{font-weight: 600; color: #fff !important;}
 
 .groupwebsite-section{}
 .groupwebsite-section a{display:block;}
